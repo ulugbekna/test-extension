@@ -9,22 +9,12 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["*"],
   "main": "./out/extension.js",
-  "contributes": {
-
-
-    "commands": [
-      {
-        "command": "python.runFile",
-        "title": "Run python file",
-        "enablement": "editorLangId == 'python' && editorTextFocus"
-      }
-    ]
-
-
-
-  },
+  "contributes": {},
+  "enabledApiProposals": [
+    "shareProvider"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
